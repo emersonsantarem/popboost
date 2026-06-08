@@ -1,0 +1,11 @@
+{
+  "version": "1.1.0",
+  "notes": "Otimizações de 2026 e limpeza nativa de Standby List!",
+  "pub_date": "2026-06-08T20:00:00Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRZUF2Rk4xRTNKYWFTTjBIZzhQbTVXS2lJZEZMWkRGTXBsd1FOSGhmenNWaCt4c2ovL01ZREJBYWlDdUpWaGdrbFZpclcrazM5MmVjZk1DUUhZdFlOK1NPdFNmdVNFMXdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwOTYwMjkzCWZpbGU6cG9wYm9vc3RfMS4xLjBfdXBkYXRlLnppcApRdktqRFBBVnVuTWxobDJibTdiRFZER1R6MGhrS003MHQ4K3FGQ3pweXd0YW5wNGN0aFdZWWVlbVpHN1R2WDJBWFVlbFdYUlF6WFNGVFZ5SXFvMHpBZz09Cg==",
+      "url": "https://github.com/emersonsantarem/PopBoost1/releases/download/Games/popboost_1.1.0_update.zip"
+    }
+  }
+}
