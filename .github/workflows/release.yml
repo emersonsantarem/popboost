@@ -59,8 +59,4 @@ jobs:
           tag_name: ${{ github.ref_name }}
           files: |
             ./src-tauri/target/release/bundle/msi/*.msi
-<<<<<<< HEAD
             ./src-tauri/target/release/bundle/msi/latest.json
-=======
-            ./src-tauri/target/release/bundle/msi/latest.json
->>>>>>> cd3c9ec340591e58aef23aa908d1ed9a969697ae
