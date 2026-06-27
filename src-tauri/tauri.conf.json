@@ -1,0 +1,45 @@
+{
+  "productName": "popboost",
+  "version": "1.1.9",
+  "identifier": "com.popboost.app",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "popboost",
+        "width": 400,
+        "height": 600,
+        "resizable": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "createUpdaterArtifacts": true,
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "publisher": "Emerson Alves Sampaio"
+  },
+  "plugins": {
+    "updater": {
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDY5Qzk0REQ0NERGMTAyMUUKUldRZUF2Rk4xRTNKYWJLVW1ZRTJsb3duTWVBSFNUUDFwWXE4N1NxWUNFSk9YVU1sOGFtUTdROEkK",
+      "endpoints": [
+        "https://raw.githubusercontent.com/emersonsantarem/popboost/main/update.json"
+      ]
+    }
+  }
+}

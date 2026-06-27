@@ -1,0 +1,42 @@
+[package]
+name = "popboost"
+version = "0.1.0"
+description = "Otimizador de Performance Padrão Ouro"
+authors = ["Emerson"]
+edition = "2021"
+
+[lib]
+name = "popboost_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[[bin]]
+name = "popboost"
+path = "src/main.rs"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["tray-icon"] }
+tauri-plugin-opener = "2"
+tauri-plugin-shell = "2"
+tauri-plugin-dialog = "2"
+tauri-plugin-process = "2"
+tauri-plugin-updater = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sysinfo = "0.30"
+winreg = "0.50"
+machine-uid = "0.5"
+machineid-rs = "1.2"
+reqwest = { version = "0.12", features = ["json", "blocking"] }
+tokio = { version = "1", features = ["full"] }
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["winnt", "minwindef", "handleapi", "processthreadsapi", "securitybaseapi", "winerror"] }
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
+opt-level = 3
