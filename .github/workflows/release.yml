@@ -5,6 +5,11 @@ on:
     tags:
       - 'v*'
 
+permissions:
+  contents: write          # Necessário para criar releases e fazer upload de assets
+  actions: read            # Opcional, mas útil
+  checks: write            # Opcional
+  
 jobs:
   create-release:
     runs-on: ubuntu-latest
