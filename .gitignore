@@ -1,0 +1,32 @@
+# Dependências
+node_modules/
+dist/
+target/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.*.local
+
+# Logs e cache
+*.log
+.cache/
+
+# Chave privada (NUNCA COMMITAR!)
+src-tauri/tauri.key
+
+# IDE
+.vscode/
+.idea/
+
+# Arquivos do Tauri
+src-tauri/target/
+src-tauri/gen/
+
+# Outros
+*.tmp
+*.bak
